@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
+import { API_BASE } from './config'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
 const LANG_STORAGE_KEY = 'walmart_genai_lang'
 const newSessionId = () => (window.crypto?.randomUUID ? window.crypto.randomUUID() : `${Date.now()}-${Math.random()}`)
 
